@@ -1,7 +1,6 @@
 # k8s-helm-portfolio
 k8d Deployment of helm using helm
 
-Sure! Here’s a `README.md` file for your Helm chart and Kubernetes deployment:
 
 ```markdown
 # WebApp1 Helm Chart
