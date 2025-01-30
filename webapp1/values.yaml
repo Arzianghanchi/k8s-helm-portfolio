@@ -1,0 +1,32 @@
+labels:
+  name:demo-a
+kind: Deployment
+deploymentname: portfolio-deployment
+namespace: default
+
+spec: 
+  replicas: 2
+  selector:
+    appname: portfolio
+  template:
+    appname: portfolio
+
+container:
+  name: portfolio-container
+  image: arzian/dockerhub:portfolio
+  ports:
+    containerport: 3000
+    
+service:
+  kind: Service
+  metadata:
+    name: portfolio-service
+  spec:
+    selector:
+      app: portfolio
+    type: LoadBalancer
+    ports:
+      protocol: TCP
+      port: 3000
+      targetPort: 3000
+      nodePort: 31110
