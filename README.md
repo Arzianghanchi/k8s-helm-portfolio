@@ -2,9 +2,6 @@
     k8s-helm-portfolio
 </h1>
 
-
-# WebApp1 Helm Chart
-
 This Helm chart deploys a Kubernetes application with a service and deployment for a web app called `portfolio`.
 
 ## Chart Details
